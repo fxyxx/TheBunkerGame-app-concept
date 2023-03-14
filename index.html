@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+    <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./libs/particles/particles.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="links__wrapper">
+      <a href="#"><i class="discord fa-brands fa-discord fa-2xl"></i></a>
+      <a href="#"><i class="telegram fa-brands fa-telegram fa-2xl"></i></a
+      ><a href="#"><i class="mail fa-solid fa-envelope fa-2xl"></i></a>
+    </div>
+    <nav class="nav-bar__wrapper">
+      <ul class="menu-nav">
+        <li><a href="#slide__1">Main</a></li>
+        <li><a href="#slide__2">How to play</a></li>
+        <li><a href="#slide__3">Rules</a></li>
+        <li><a href="#slide__4">IDK</a></li>
+        <li><a href="#slide__5">About us</a></li>
+      </ul>
+    </nav>
+    <div class="swiper slider">
+      <div class="swiper-wrapper slider__wrapper">
+        <!-- slide #1 -->
+        <div
+          id="slide__1"
+          class="swiper-slide slider__item"
+          data-swiper-slide-index="0"
+        >
+          <div
+            class="slider__layer"
+            data-swiper-parallax="35%"
+            style="
+              background-image: url(./images/main-page/screen-1/layer-back.jpg);
+            "
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="20%"
+            style="
+              background-image: url(./images/main-page/screen-1/layer-mid.png);
+            "
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="33%"
+            style="
+              background-image: url(./images/main-page/screen-1/layer-mid2.png);
+            "
+          ></div>
+          <canvas
+            class="particles slider__layer"
+            data-swiper-parallax="20%"
+            data-color="#37484e"
+          ></canvas>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="5%"
+            style="
+              background-image: url(./images/main-page/screen-1/layer-front.png);
+            "
+          ></div>
+          <div class="text__wrapper">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              consequuntur deleniti architecto cumque? Corrupti voluptatem
+              impedit similique eaque explicabo at reiciendis fugiat quisquam!
+              Saepe nam sed alias laborum voluptate dignissimos, quo iure
+              tempore numquam. Odit quod consectetur quisquam ullam iste!
+            </p>
+          </div>
+        </div>
+        <!-- slide #2 -->
+        <div
+          id="slide__2"
+          class="swiper-slide slider__item"
+          data-swiper-slide-index="1"
+        >
+          <div
+            class="slider__layer"
+            data-swiper-parallax="40%"
+            style="
+              background-image: url(./images/main-page/screen-2/layer-back.jpg);
+            "
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="25%"
+            style="
+              background-image: url(./images/main-page/screen-2/layer-mid2.png);
+            "
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="15%"
+            style="
+              background-image: url(./images/main-page/screen-2/layer-mid.png);
+            "
+          ></div>
+          <canvas
+            class="particles slider__layer"
+            data-swiper-parallax="20%"
+            data-color="#37484e"
+          ></canvas>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="3%"
+            style="
+              background-image: url(./images/main-page/screen-2/layer-front.png);
+            "
+          ></div>
+        </div>
+        <!-- slide #3 -->
+        <div
+          id="slide__3"
+          class="swiper-slide slider__item"
+          data-swiper-slide-index="2"
+        >
+          <div
+            class="slider__layer"
+            data-swiper-parallax="35%"
+            style="background-image: url(./images/main-page/screen-3/back.jpg)"
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="33%"
+            style="background-image: url(./images/main-page/screen-3/mid2.png)"
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="30%"
+            style="background-image: url(./images/main-page/screen-3/mid.png)"
+          ></div>
+          <canvas
+            class="particles slider__layer"
+            data-swiper-parallax="25%"
+            data-color="#37484e"
+          ></canvas>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="10%"
+            style="background-image: url(./images/main-page/screen-3/front.png)"
+          ></div>
+        </div>
+        <!-- slide #4 -->
+        <div
+          id="slide__4"
+          class="swiper-slide slider__item"
+          data-swiper-slide-index="3"
+        >
+          <div
+            class="slider__layer"
+            data-swiper-parallax="35%"
+            style="background-image: url(./images/main-page/screen-4/back.jpg)"
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="30%"
+            style="background-image: url(./images/main-page/screen-4/front.png)"
+          ></div>
+          <canvas
+            class="particles slider__layer"
+            data-swiper-parallax="25%"
+            data-color="#525a6d"
+          ></canvas>
+        </div>
+        <!-- slide #5 -->
+        <div
+          id="slide__5"
+          class="swiper-slide slider__item"
+          data-swiper-slide-index="4"
+        >
+          <div
+            class="slider__layer"
+            data-swiper-parallax="35%"
+            style="background-image: url(./images/main-page/screen-5/back1.jpg)"
+          ></div>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="28%"
+            style="background-image: url(./images/main-page/screen-5/mid.png)"
+          ></div>
+          <canvas
+            class="particles slider__layer"
+            data-swiper-parallax="25%"
+            data-color="#525a6d"
+          ></canvas>
+          <div
+            class="slider__layer"
+            data-swiper-parallax="15%"
+            style="background-image: url(./images/main-page/screen-5/front.png)"
+          ></div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </body>
+</html>

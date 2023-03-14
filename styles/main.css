@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Kelly+Slab&display=swap');
+/* font-family: 'Kelly Slab', cursive; */
+html,
+body {
+  height: 100%;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+:root {
+  --transition: 1.75s cubic-bezier(0.2, 0.6, 0, 1);
+}
+.slider {
+  height: 100%;
+}
+.slider__layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  /* transition: var(--transition)!important; */
+}
+.slider__layer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 250px rgb(0 0 0 / 0.3);
+}
+.slider__item {
+  overflow: hidden;
+}
+.slider__wrapper {
+  will-change: transform;
+  transform-style: preserve-3d;
+  /* transition: var(--transition)!important; */
+}
+.swiper-pagination-bullet {
+  background-color: #fff;
+  height: 50px;
+  width: 5px;
+  border-radius: 3px;
+}
+
+.links__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 5;
+  backdrop-filter: blur(5px);
+  width: 60px;
+  height: 160px;
+  border-radius: 15px;
+}
+.discord {
+  color: #cccccc;
+  transition: 0.2s;
+}
+.discord:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+.telegram {
+  color: #cccccc;
+  transition: 0.2s;
+}
+.telegram:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+.mail {
+  color: #cccccc;
+  transition: 0.2s;
+}
+.mail:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.nav-bar__wrapper {
+  margin-top: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  position: absolute;
+  bottom: 88%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.473);
+  width: 540px;
+  height: 50px;
+  border-radius: 15px;
+}
+.nav-bar__wrapper > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  gap: 15px;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+li > a {
+  color: #cccccc;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+li > a:hover {
+  color: #fff;
+}
+li > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.3px;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+li > a:hover::after {
+  width: 100%;
+}
+.menu-nav a.active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.text__wrapper {
+  position: absolute;
+  z-index: 5;
+  color: #fff;
+  font-family: 'Kelly Slab', cursive;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 830px;
+  height: 210px;
+  background-color: rgba(0, 0, 0, 0.473);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+}
+
+.text__wrapper > h1 {
+  font-size: 60px;
+}
+
+.text__wrapper > p {
+  text-align: center;
+  font-size: 18px;
+  max-width: 750px;
+}
